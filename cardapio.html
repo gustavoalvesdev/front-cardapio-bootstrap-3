@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio Online</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu Superior -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Logo do Restaurante</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Cardápio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron com informações do restaurante -->
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Nome do Restaurante</h1>
+      <p>Horário de Funcionamento: 10:00 - 22:00</p>
+      <p>Whatsapp: (11) 99999-9999</p>
+      <p>Taxa de Entrega: R$ 5,00</p>
+    </div>
+  </div>
+
+  <!-- Seção de Lanches e Bebidas -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Lanches</h2>
+        <label for="selectLanches">Escolha a categoria dos lanches:</label>
+        <select id="selectLanches" class="form-control">
+          <option value="">Todos</option>
+          <option value="sanduiches">Sanduíches</option>
+          <option value="hamburgueres">Hambúrgueres</option>
+          <option value="salgados">Salgados</option>
+        </select>
+        <ul class="list-group" id="listaLanches">
+          <li class="list-group-item">Sanduíche de Frango - R$ 12,00</li>
+          <li class="list-group-item">Hambúrguer Clássico - R$ 15,00</li>
+          <li class="list-group-item">Coxinha - R$ 5,00</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Bebidas</h2>
+        <label for="selectBebidas">Escolha a categoria das bebidas:</label>
+        <select id="selectBebidas" class="form-control">
+          <option value="">Todos</option>
+          <option value="refrigerantes">Refrigerantes</option>
+          <option value="sucos">Sucos</option>
+          <option value="cervejas">Cervejas</option>
+        </select>
+        <ul class="list-group" id="listaBebidas">
+          <li class="list-group-item">Coca-Cola - R$ 5,00</li>
+          <li class="list-group-item">Suco de Laranja - R$ 6,00</li>
+          <li class="list-group-item">Cerveja Pilsen - R$ 7,00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="navbar navbar-inverse">
+    <div class="container-fluid text-center">
+      <p><a class="navbar-brand" href="#">Logo do Restaurante</a></p>
+      <p>Endereço: Rua Exemplo, 123, Cidade - SP</p>
+      <p>Whatsapp: (11) 99999-9999</p>
+      <p>Sistema desenvolvido por <a href="#">Empresa Desenvolvedora</a></p>
+      <p><a href="#">Crie seu cardápio também</a></p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
